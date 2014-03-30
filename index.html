@@ -1,0 +1,36 @@
+---
+layout: frontPage
+title: Main
+---
+
+  <div class="row">
+    <div class="span12">
+		  <div class="hero-unit">
+			<p class="above">The personal site of</p>
+			<h1><span style="font-weight:200">Max</span><strong style="font-weight:900">Kaye</strong></h1>
+			<!-- <p><a class="btn btn-primary btn-large">About Max &raquo;</a></p> -->
+			</div>
+	</div>
+	<div class="span6">
+		<h3>Identities:</h3>
+		<ul>
+			<li>
+				<strong>Bitcoin:</strong> 1MaxKayeQg4YhFkzFz4x6NDeeNv1bwKKVA
+			</li>
+			<li>
+				<strong>GPG:</strong> <a href="/gpg">https://xk.io/gpg</a>
+			</li>
+		</ul>
+    </div>
+			<div class="span6">
+				<h3>No Fit State:</h3>
+				<ul>
+					{% for post in site.posts %}
+					<li>
+						<a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+  </div>
+

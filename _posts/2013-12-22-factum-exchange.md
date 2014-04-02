@@ -263,7 +263,7 @@ Typically, a generic fiat exchange (GFiX) will take the following form:
 
 #### Mastercoin
 
-Note: Marketcoin is a layer over Bitcoin (data stored in TXs on the Bitcoin network) and thus blocks occur at the same time.
+Note: Marstercoin is a layer over Bitcoin (data stored in TXs on the Bitcoin network) and thus blocks occur at the same time.
 Note: The following may be incorrect. I've scraped together some information but details of the spec are pretty thin.
 
 

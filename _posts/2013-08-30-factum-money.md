@@ -2,6 +2,7 @@
 title: Factum Money
 layout: post
 author: Max
+date: 2013-08-30
 ---
 
 # Introducing Factum Money

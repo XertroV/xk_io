@@ -1,10 +1,10 @@
 ---
-title: Secure a Blockchain with Zero Energy
+title: How to Secure a Blockchain with Zero Energy
 author: Max
+date: 2014-01-15
 layout: post
 ---
 
-# How to secure a Blockchain with Zero Energy
 
 Originally published in the [Bitcoin Magazine](http://bitcoinmagazine.com/9317/how-to-secure-a-blockchain-with-zero-energy/) on January 15th, 2014. Reposted here on 1st April, 2014.
 

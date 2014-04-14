@@ -1,7 +1,8 @@
 ---
-title: Factum Exchange
+title: Introducing Factum Exchange
 layout: post
 author: Max
+date: 2013-12-22
 ---
 
 # Introducing Factum Exchange

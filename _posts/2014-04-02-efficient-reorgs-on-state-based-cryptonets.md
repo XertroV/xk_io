@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Efficient Reorgs on Cryptonets
-author: Max
-date:   2014-04-02 13:37:00
+author: Max Kaye
+date:   2014-04-02
 categories: state reorg cryptonet marketcoin
 ---
 

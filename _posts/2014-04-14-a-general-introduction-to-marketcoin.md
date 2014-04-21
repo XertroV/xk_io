@@ -2,7 +2,7 @@
 layout: post
 title:  A General Introduction to Marketcoin
 author: Max Kaye
-date:   2014-04-14
+date:   2014-04-14 00:00:00
 categories: marketcoin grachten
 ---
 

@@ -4,7 +4,8 @@ section: No Fit State
 
 {% include header.html %}
 
-<h1>{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
+<h1>{{ page.title }}<br>
+<small>{{ page.date | date_to_string }} | {{ page.author }}</small></h1>
 
 <div class="blog-post">
 {{ content }}

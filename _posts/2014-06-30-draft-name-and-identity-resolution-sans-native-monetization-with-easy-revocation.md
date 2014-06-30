@@ -1,7 +1,7 @@
 ---
 author: Max Kaye
 title: A Draft Solution to Broken Certificate Revocation with Free Name Resolution and Authentication Without a Central Authority
-date: 2014-06-30
+date: 2014-06-30 00:00:00
 categories: front
 layout: post
 ---
@@ -39,7 +39,8 @@ So it seems there are two areas we must improve upon - at least - when it comes 
 
 At the same time, it must have a number of very important properties:
 
-* [A] Concensus - the one possible solution to the longest-chain-problem must dominate across the network in a reasonable time period (such as 60 minutes). The interpretation of this property in Bitcoin is the liklihood of a double spend occuring
+* [A] Concensus - the one possible solution to the longest-chain-problem must dominate across the network in a reasonable time period (such as 60 minutes). The interpretation of this property in Bitcoin is the liklihood of a double spend occuring...
+* [B] ...
 
 I believe I have that solution.
 
@@ -80,7 +81,7 @@ The header should include something like a [Reiner-Tree](https://bitcointalk.org
 
 We can just layer our current cert models over the new network, and maybe can even make the new network backwards compatible.
 
-In 2012 symantec claimed to have 800,000 out there [link](http://www.symantec.com/about/news/release/article.jsp?prid=20120419_01) and maybe that put the total number at 10 million (10^7) or lets be generous and say 5\*10^7 (50 million is a lot). Lets presume that doubled each year, and now we have 2*10^8. Many, but we can deal. Each cert is about 1 kb, which is 200 Gb total. Yikes. Luckily, we can build an incremental system so users down the chain of current certificates need to make some effort (basically just to rate-limit) to get their cert on the network. So 0.5% on day 1 which is 1 Gb of state, approximately.
+In 2012 symantec claimed to have 800,000 out there [link](http://www.symantec.com/about/news/release/article.jsp?prid=20120419_01) and maybe that put the total number at 10 million (10^7) or lets be generous and say 5\*10^7 (50 million is a lot). Lets presume that doubled each year, and now we have 2x10^8. Many, but we can deal. Each cert is about 1 kb, which is 200 Gb total. Yikes. Luckily, we can build an incremental system so users down the chain of current certificates need to make some effort (basically just to rate-limit) to get their cert on the network. So 0.5% on day 1 which is 1 Gb of state, approximately.
 
 Now, users can claim their own domain names in good time and with that comes the native security (no need for certificate auths) but in the mean time this network can physically mirror the true state of certificates. 
 

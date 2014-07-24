@@ -1,5 +1,6 @@
 .posts {
-	font-size: 16px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .posts ul {
@@ -14,6 +15,64 @@ body {
     font-family: 'Droid Serif', "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+.blog-post p, .blog-post ul li, code {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .center {
     text-align: center;
+}
+
+
+/* Side notes for calling out things
+https://gist.github.com/matthiasg/6153853
+-------------------------------------------------- */
+ 
+/* Base styles (regardless of theme) */
+.bs-callout {
+margin: 20px 0;
+padding: 15px 30px 15px 15px;
+border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+margin-top: 0;
+}
+.bs-callout h6 {
+margin-top: 0;
+}
+.bs-callout p:last-child {
+margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+background-color: #fff;
+}
+ 
+/* Themes for different contexts */
+.bs-callout-danger {
+background-color: #fcf2f2;
+border-color: #dFb5b4;
+}
+.bs-callout-player-two {
+background-color: #fefbed;
+border-left: 0px;
+border-right: 5px solid;
+border-color: #f1e7bc;
+text-align: right;
+}
+.bs-callout-player-one {
+background-color: #f0f7fd;
+border-color: #d0e3f0;
+}
+.bs-callout-aside {
+background-color: #FFEEFF;
+border-right: 5px solid;
+border-color: #DD99DD;
+background-color: #FFDDDD;
+border-color: #CC9999;
 }

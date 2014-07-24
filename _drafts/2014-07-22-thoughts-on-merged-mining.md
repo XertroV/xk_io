@@ -50,21 +50,15 @@ In this case the simplest construction is as in 2) with a different header struc
 
 ### Some other observations
 
-##### There is no child-parent relationship
+These did not occur to me to begin with, and I think they're less intuitive.
+
+#### There is no child-parent relationship
 
 A merged chain and what it is mined with are not in a binding relationship. Obviously (using Bitcoin and Namecoin as examples) Bitcoin does not know of, nor care about, merged mining. Namecoin, although predominantly mined through Bitcoin blocks, has no requirement specifying the Bitcoin network as the host. It doesn't care about which block it is, nor whether it is valid its local network, all that matters is a structural relationship leading to a deterministic location that stores the hash of the Namecoin header.
 
 The `AuxPoW_Header`can happily have all fields set to zero (besides the merkle_root) provided the PoW is valid against the local header's target.
 
-##### Bitcoin could fork to merged mining and nothing would change
+#### Bitcoin could fork to merged mining and nothing would change
 
 Let's presume we have two Namecoin-esq networks, and no Bitcoin-esq network. Using the above property both could be 'merge mined' without any 'host' network. This is consistent with the 'no child-parent relationship' property.
-
-### An alternate design proposition
-
-If we chase one property the above three options don't have, we end up with some interesting results.
-
-That property is to force merged mining to be **not** free: that mining two chains at once is twice as expensive as mining one chain alone. This is pointless unless both chains work cooperatively to secure one another.
-
-So the point of this alternate design is to provide mutual security without weakening the relative security of any participating networks. (In the same way Namecoin is relatively weakened by comparison to Bitcoin - it is worth pointing out this is still better than Namecoin's security would have been without merged mining).
 

@@ -9,3 +9,11 @@
 .posts li {
 	line-height: 24px;
 }
+
+body {
+    font-family: 'Droid Serif', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.center {
+    text-align: center;
+}
